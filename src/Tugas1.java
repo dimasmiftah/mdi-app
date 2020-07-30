@@ -44,7 +44,7 @@ public class Tugas1 extends javax.swing.JFrame {
     public void simpanData() {
         try {
             Statement smt = con.createStatement();
-            String sql = "INSERT INTO t_mahasiswa VALUES (" + tfTambahNim.getText().toString() + ", '" + tfTambahNama.getText() + "', 0, '')";
+            String sql = "INSERT INTO t_mahasiswa VALUES (" + tfTambahNim.getText().toString() + ", '" + tfTambahNama.getText() + "', 0, '','',NOW(),'')";
             smt.execute(sql);
             smt.close();
             tampilData();
