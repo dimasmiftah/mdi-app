@@ -23,7 +23,7 @@ public class Tugas3 extends javax.swing.JFrame {
         visibleLabelText(false);
     }
     
-    public void visibleLabelText (boolean tampil) {
+    private void visibleLabelText (boolean tampil) {
         jLabel1.setVisible(tampil);
         jLabel2.setVisible(tampil);
         jLabel3.setVisible(tampil);
